@@ -3,13 +3,16 @@
 	<meta charset="UTF-8">
 
 <!-- Javascript -->
+<!--
 	<script language="javascript" type="text/javascript" src="js/p5.js"></script>
 	<script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
+-->
 	<!-- uncomment lines below to include extra p5 libraries -->
 	<!--<script language="javascript" src="../addons/p5.dom.js"></script>-->
 	<!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
+<!--
 	<script language="javascript" type="text/javascript" src="js/sketch3.js"></script>
-	<!-- this line removes any default padding and style. you might only need one of these values set. -->
+-->
 	
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -22,14 +25,54 @@
 	<header>
 		<h1>loominary</h1>
 	</header>
+	
+	<div id="loom">
+	</div><!--close loom-->
+
+	<div class="editor">
+
+	<form>
+
+		<h3>Width:</h3>
+		Number of warp threads:
+		<select name="warp_width">
+			<option value="8">8</option>
+			<option value="16">16</option>
+			<option value="32">32</option>
+			<option value="64">64</option>
+		</select>
+		<h3>Color:</h3>
+		<label>Warp:</label>
+  		<input type="radio" name="warp-color" value="red" checked>
+  		Red
+  		<br>
+  		<input type="radio" name="warp-color" value="orange">
+  		Orange
+  		<br>
+  		<input type="radio" name="warp-color" value="yellow">
+  		Yellow
+  		
+  		<label>Weft:</label>
+  		<input type="radio" name="warp-color" value="red" checked>
+  		Red
+  		<br>
+  		<input type="radio" name="warp-color" value="orange">
+  		Orange
+  		<br>
+  		<input type="radio" name="warp-color" value="yellow">
+  		Yellow
+
+	</form>
+
+	</div><!--close editor-->
 
 	<!--<div id="myContainer"></div>-->
 
-	<div id ="r_panel">
+	<!--<div id ="r_panel">
 		<h2>parameters</h2>
 
 		<div id="buttonPanel"></div>
-	</div>
+	</div>-->
 
 </body>
 </html>

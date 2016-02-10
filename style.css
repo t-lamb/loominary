@@ -68,8 +68,31 @@ h2{
 	font-family: 'Oxygen Mono';
 }
 
+h3{
+	font-size: 1.5rem;
+	color:#7575A3;
+	font-family: 'Oxygen Mono';
+}
+label{
+	font-size: 1rem;
+	color:#7575A3;
+	display: block;
+	font-family: 'Oxygen Mono';
+}
+
 header{
 	padding: 0 0 1rem 0;
+}
+
+#loom{
+	float: left;
+	width: 40rem;
+	height: 40rem;
+	background-color: #00FFFF;
+}
+.editor{
+	float: left;
+	padding: 0 2rem;
 }
 
 #r_panel {
