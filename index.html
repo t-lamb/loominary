@@ -32,36 +32,65 @@
 	<div class="editor">
 
 	<form>
-
-		<h3>Width:</h3>
-		Number of warp threads:
-		<select name="warp_width">
-			<option value="8">8</option>
-			<option value="16">16</option>
-			<option value="32">32</option>
-			<option value="64">64</option>
-		</select>
-		<h3>Color:</h3>
-		<label>Warp:</label>
-  		<input type="radio" name="warp-color" value="red" checked>
-  		Red
-  		<br>
-  		<input type="radio" name="warp-color" value="orange">
-  		Orange
-  		<br>
-  		<input type="radio" name="warp-color" value="yellow">
-  		Yellow
-  		
-  		<label>Weft:</label>
-  		<input type="radio" name="warp-color" value="red" checked>
-  		Red
-  		<br>
-  		<input type="radio" name="warp-color" value="orange">
-  		Orange
-  		<br>
-  		<input type="radio" name="warp-color" value="yellow">
-  		Yellow
-
+	<ul class="form-list">
+		<li class="form-item">
+			<h3>Width:</h3>
+			Number of warp threads:
+			<select name="warp_width">
+				<option value="8">8</option>
+				<option value="16">16</option>
+				<option value="32">32</option>
+				<option value="64">64</option>
+			</select>
+		</li>
+		<li class="form-item">
+			<h3>Color:</h3>
+			<label>Warp:</label>
+			<ul class="color-list">
+				<li>
+	  				<input type="radio" name="warp-color" value="red" checked>
+	  				Red
+	  			</li>
+	  			<li>
+	  				<input type="radio" name="warp-color" value="orange">
+	  				Orange
+	  			</li>
+	  			<li>
+	  				<input type="radio" name="warp-color" value="yellow">
+	  				Yellow
+	  			</li>
+	  		</ul>
+	  		<br>
+	  		<label>Weft:</label>
+			<ul class="color-list">
+				<li>
+	  				<input type="radio" name="weft-color" value="red" checked>
+	  				Red
+	  			</li>
+	  			<li>
+	  				<input type="radio" name="weft-color" value="orange">
+	  				Orange
+	  			</li>
+	  			<li>
+	  				<input type="radio" name="weft-color" value="yellow">
+	  				Yellow
+	  			</li>
+	  		</ul>
+	  	</li>
+	  	<li class="form-item">
+	  		<h3>Pattern:</h3>
+	  		<ul>
+				<li>
+	  				<input type="radio" name="weave-pattern" value="twill" checked>
+	  				Twill
+	  			</li>
+	  			<li>
+	  				<input type="radio" name="weave-pattern" value="twill">
+	  				Twill
+	  			</li>
+	  		</ul>
+	  	</li>
+	</ul>
 	</form>
 
 	</div><!--close editor-->
