@@ -84,14 +84,25 @@ label{
 	color:#7575A3;
 	display: block;
 	font-family: 'Oxygen Mono';
-	padding: 0 0 0 1rem;
 }
-
 .form-item{
 	padding: 0 0 1rem 0;
 }
-.color-list{
+.color-menu{
 	padding: 0 0 0 1rem;
+}
+.color-item{
+	width: 2rem;
+	height: 2rem;
+	background-color: red;
+	display: inline-block;
+	margin: .25rem;
+}
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"]:checked + .color-item{
+	border: 2px solid blue;
 }
 
 #loom{
