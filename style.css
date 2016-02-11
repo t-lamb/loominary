@@ -94,9 +94,9 @@ label{
 .color-item{
 	width: 2rem;
 	height: 2rem;
-	background-color: red;
 	display: inline-block;
 	margin: .25rem;
+	border-radius: 50%;
 }
 input[type="radio"] {
     display:none;
@@ -114,6 +114,24 @@ input[type="radio"]:checked + .color-item{
 .editor{
 	float: left;
 	padding: 0 2rem;
+}
+#red{
+	background-color: #CF000F;
+}
+#orange{
+	background-color: #F27935;
+}
+#yellow{
+	background-color: #E9D460;
+}
+#green{
+	background-color: #00B16A;
+}
+#blue{
+	background-color: #1E8BC3;
+}
+#purple{
+	background-color: #1F3A93;
 }
 
 #r_panel {
