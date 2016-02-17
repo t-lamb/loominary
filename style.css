@@ -74,17 +74,35 @@ h3{
 	font-family: 'Oxygen Mono';
 	padding: 0 0 .5rem 0;
 }
+h4{
+	font-size: 1rem;
+	color:#7575A3;
+	display: block;
+	font-family: 'Oxygen Mono';
+}
 
 header{
 	padding: 0 0 1rem 0;
 }
 
 label{
-	font-size: 1rem;
-	color:#7575A3;
-	display: block;
-	font-family: 'Oxygen Mono';
+	display: inline-block;
 }
+label > input + div{
+	cursor:pointer;
+	border: 2px solid transparent;
+}
+label > input + div:hover{
+	cursor:pointer;
+	border: 2px solid blue;
+}
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"]:checked + div{
+	border: 2px solid blue;
+}
+
 .form-item{
 	padding: 0 0 1rem 0;
 }
@@ -94,15 +112,14 @@ label{
 .color-item{
 	width: 2rem;
 	height: 2rem;
-	display: inline-block;
-	margin: .25rem;
+	margin: .5rem .5rem 0 0;
 	border-radius: 50%;
 }
-input[type="radio"] {
-    display:none;
-}
-input[type="radio"]:checked + .color-item{
-	border: 2px solid blue;
+.pattern-item{
+	width: 4rem;
+	height: 4rem;
+	margin: 0 .5rem .5rem 0;
+	background-color: black;
 }
 
 #loom{

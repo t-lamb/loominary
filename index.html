@@ -38,7 +38,7 @@
 			Number of warp threads:
 			<select name="warp_width">
 				<option value="8">8</option>
-				<option value="16">16</option>
+				<option value="16" selected="selected">16</option>
 				<option value="32">32</option>
 				<option value="64">64</option>
 			</select>
@@ -46,49 +46,83 @@
 		<li class="form-item">
 			<h3>Color:</h3>
 			<div class="color-menu">
-			<label>Warp:</label>
-	  			<input type="radio" name="warp-color" value="red" checked>
+			<h4>Warp:</h4>
+				<label>
+	  				<input type="radio" name="warp-color" value="red" checked>
 	  				<div class="color-item" id="red"></div>
-	  			<input type="radio" name="warp-color" value="orange">
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="warp-color" value="orange">
 	  				<div class="color-item" id="orange"></div>
-	  			<input type="radio" name="warp-color" value="yellow">
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="warp-color" value="yellow">
 	  				<div class="color-item" id="yellow"></div>
-	  			<input type="radio" name="warp-color" value="green">
-	  			<div class="color-item" id="green"></div>
-	  			<input type="radio" name="warp-color" value="blue">
-	  			<div class="color-item" id="blue"></div>
-	  			<input type="radio" name="warp-color" value="purple">
-	  			<div class="color-item" id="purple"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="warp-color" value="green">
+	  				<div class="color-item" id="green"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="warp-color" value="blue">
+	  				<div class="color-item" id="blue"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="warp-color" value="purple">
+	  				<div class="color-item" id="purple"></div>
+	  			</label>
 	  		</div><!--close color-menu1-->
-
+	  		<br/>
 	  		<div class="color-menu">
-	  		<label>Weft:</label>
-	  			<input type="radio" name="weft-color" value="red" checked>
-	  			<div class="color-item" id="red"></div>
-	  			<input type="radio" name="weft-color" value="orange">
-	  			<div class="color-item" id="orange"></div>
-	  			<input type="radio" name="weft-color" value="yellow">
-	  			<div class="color-item" id="yellow"></div>
-	  			<input type="radio" name="weft-color" value="green">
-	  			<div class="color-item" id="green"></div>
-	  			<input type="radio" name="weft-color" value="blue">
-	  			<div class="color-item" id="blue"></div>
-	  			<input type="radio" name="weft-color" value="purple">
-	  			<div class="color-item" id="purple"></div>
+	  		<h4>Weft:</h4>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="red" checked>
+	  				<div class="color-item" id="red"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="orange">
+	  				<div class="color-item" id="orange"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="yellow">
+	  				<div class="color-item" id="yellow"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="green">
+	  				<div class="color-item" id="green"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="blue">
+	  				<div class="color-item" id="blue"></div>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weft-color" value="purple">
+	  				<div class="color-item" id="purple"></div>
+	  			</label>
 	  		</div><!--close color-menu2-->
 	  	</li>
 	  	<li class="form-item">
 	  		<h3>Pattern:</h3>
-	  		<ul>
-				<li>
-	  				<input type="radio" name="weave-pattern" value="twill" checked>
-	  				Twill
-	  			</li>
-	  			<li>
+	  			<label>
+	  				<input type="radio" name="weave-pattern" value="plain">
+	  				<div class="pattern-item" id="plain"></div>
+	  				Plain
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weave-pattern" value="basket">
+	  				<div class="pattern-item" id="basket"></div>
+	  				Basket
+	  			</label>
+	  			<label>
 	  				<input type="radio" name="weave-pattern" value="twill">
+	  				<div class="pattern-item" id="twill"></div>
 	  				Twill
-	  			</li>
-	  		</ul>
+	  			</label>
+	  			<label>
+	  				<input type="radio" name="weave-pattern" value="rib">
+	  				<div class="pattern-item" id="rib"></div>
+	  				Rib
+	  			</label>
 	  	</li>
 	</ul>
 	</form>
